@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas</title>
+<script src="script.js"></script>
+<link rel="stylesheet" href="css.css">
+</head>
+<body onLoad="startGame()">
+	<h1>Vaja 6</h1>
+	<hr>
+	<p>Igralec z uporabo tipk w, a, s, d premika točko po canvasu. Ko pritisne na presledek se trenutna lokacija točke shrani, v primeru, da je bila kakšna točka že shranjena, se med staro in novo točko na canvasu izriše ravna črta.</p>
+	<form>
+	  Izberi barvo:
+	<select id="mySelect">
+    	<option value="black" onClick="changeColor()">Črna</option>
+		<option value="orange" onClick="changeColor()">Oranžna</option>
+		<option value="yellow" onClick="changeColor()">Rumena</option>
+		<option value="gray" onClick="changeColor()">Siva</option>
+	</select>
+</form>
+	
+<div class="wrapper">
+	<canvas id="draw" height="500" width="700" style="border: 1px solid black;"></canvas>
+	</div>
+    
+</body>
+</html>
